@@ -39,7 +39,7 @@ ghcup:
         'https://downloads.haskell.org/ghcup/x86_64-linux-ghcup' \
    && chmod 0755 /bin/ghcup \
    && ghcup upgrade --target /bin/ghcup \
-   && ghcup install cabal --set \
+   && ghcup install cabal --set 3.10.2.0 \
    && /usr/local/.ghcup/bin/cabal update
   ENV PATH="/usr/local/.ghcup/bin:$PATH"
 
